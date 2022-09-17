@@ -3,7 +3,7 @@ const productController = require("./../controllers/productController");
 const authController = require("./../controllers/authController");
 const productRouter = express.Router();
 //routes
-//obtengo y agrego
+//obtengo todos y agregar
 productRouter
   .route("/")
   .all(authController.protect)
